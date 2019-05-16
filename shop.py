@@ -15,14 +15,18 @@ shop_items = [ShopItem('Deku Stick', 5), ShopItem('Deku Nut', 5), ShopItem('Deku
 
 def display_shop(items, funds):
     print(f'Welcome to the Kokiri Shop!\nYour funds: {funds} Rupees\n')
-    [print(f'{i+1}) {item.name}: {item.cost} Rupees') for i, item in enumerate(items)]
+    
+    for i, item in enumerate(items):
+        print(f'{i+1}) {item.name}: {item.cost} Rupees')
+    
     return int(input('\nSelect an option to purchase (enter -1 to quit): '))
 
 def display_inventory(inventory):
     print('Your Inventory:')
     
     if inventory: 
-        [print(item.name) for item in inventory]
+        for item in inventory:
+            print(item.name)
     else: 
         print('Empty!')
     
