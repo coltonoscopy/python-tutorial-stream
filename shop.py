@@ -1,7 +1,7 @@
 '''
 CS50 Python Tutorial
 
-Simple shop example, with the ability to buy and sell goods.
+Simple shop example, with the ability to buy goods.
 '''
 
 import collections
